@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taste of Naija</title>
+
+  <!-- Font Awesome for WhatsApp Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+ <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #fffaf0;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #008751, #fcd116);
+      background-image: url("images/bg-original.png");
+      color: white;
+      text-align: center;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      background-size: cover;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: #008751;
+    }
+
+    /* About Us */
+    .about {
+      text-align: center;
+      line-height: 1.8;
+      font-size: 1.1rem;
+    }
+
+    /* Menu Sections */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .menu-card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+    .menu-card img {
+      width: 100%;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .menu-card h3 {
+      color: #e63946;
+      margin-bottom: 10px;
+    }
+
+    .menu-card p {
+      font-size: 0.95rem;
+    }
+
+    /* Location */
+    .location {
+      background: #008751;
+      color: white;
+      border-radius: 15px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .location p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+    .location-map {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for responsiveness */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.location-map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+}
+
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    /* WhatsApp Floating Icon */
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      text-decoration: none;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+
+    .whatsapp:hover {
+      background: #1ebe5d;
+    }
+  </style>
+
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Taste of Naija</h1>
+    <p>Authentic Nigerian Meals • Rich Flavours • Home Taste</p>
+  </header>
+
+  <!-- About Us -->
+  <section>
+<h2 class="section-title">About Us</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; align-items: center;">
+<div>
+<p class="about">
+Taste of Naija is a proudly Nigerian restaurant serving traditional dishes made with fresh local ingredients.
+From spicy soups to mouth-watering grills, we bring the true taste of Nigeria to your table.
+</p>
+</div>
+
+
+<!-- About Image -->
+<div style="width: 100%; height: 280px; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.15);">
+<img src="https://images.unsplash.com/photo-1604909052743-94e838986d24" alt="Nigerian Food" style="width: 100%; height: 100%; object-fit: cover;">
+</div>
+</div>
+</section>
+  <!-- Dishes -->
+  <section>
+    <h2 class="section-title">Our Dishes</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="images/jollof2.jpg" alt="">
+        <h3>Jollof Rice & Chicken</h3>
+        <p>Smoky Nigerian jollof rice served with grilled chicken.</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/egusi.jpg" alt="">
+        <h3>Pounded Yam & Egusi</h3>
+        <p>Classic egusi soup cooked with melon seeds and assorted meat.</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/suya.jpg" alt="">
+        <h3>Suya</h3>
+        <p>Spicy grilled beef skewers with onions and pepper.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Drinks -->
+  <section>
+    <h2 class="section-title">Our Drinks</h2>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="images/xobo.jpeg" alt="">
+        <h3>Zobo</h3>
+        <p>Refreshing hibiscus drink with natural spices.</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/kunu.png" alt="">
+        <h3>Kunu</h3>
+        <p>Traditional millet drink, smooth and nourishing.</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/palm-wine.jpg" alt="">
+        <h3>Palm Wine</h3>
+        <p>Freshly tapped palm wine with a natural sweet taste.</p>
+      </div>
+         <div class="menu-card">
+          <img src="images/gaurba.png" alt="">
+        <h3>Guruba (Guruba Juice) 🍉</h3>
+        <p>High in vitamin C, calcium, and antioxidants.</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/fura.png" alt="">
+        <h3>Fura da Nono (Millet Balls in Yogurt Drink) 🥤</h3>
+        <p> Electrolyte-rich, hydrating</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/coconut water.png" alt="">
+        <h3>Coconut Water (Ami Ojuku) 🥥</h3>
+        <p> Cold, straight fzrom the coconut or bottled</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/ogbe.png" alt="">
+        <h3>Ogbe (Sugarcane Juice) 🍹</h3>
+        <p>Natural energy booster</p>
+      </div>
+      <div class="menu-card">
+        <img src="images/sobo.jpeg" alt="">
+        <h3>Sobo (Roselle Seed Drink) 🍹</h3>
+        <p>Rich in nutrients, aids digestion, and detoxifies</p>                                                                                
+      </div>
+      <div class="menu-card">
+        <img src="images/wanjo.jpg" alt="">
+        <h3>Wanjo (Mango Leaf Drink) 🌿</h3>
+        <p>Traditionally used for managing diabetes and boosting immunity</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location -->
+  <section>
+    <h2 class="section-title">Our Location</h2>
+    <div class="location" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; align-items: center;">
+      <div>
+        <h3>Visit Us Today</h3>
+        <p>12 Opebi Road, Ikeja, Lagos, Nigeria</p>
+        <p>Open Daily: 9am – 10pm</p>
+      </div>
+
+      <!-- Google Map -->
+    <div class="location-map">
+  <iframe src="https://www.google.com/maps?q=Opebi+Road+Ikeja+Lagos&output=embed" allowfullscreen loading="lazy"></iframe>
+</div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Taste of Naija. All Rights Reserved.</p>
+  </footer>
+
+  <!-- WhatsApp Icon -->
+  <a href="https://wa.me/2349068847919" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
