@@ -125,7 +125,25 @@
   width: 100% !important;
   height: 100% !important;
   border: 0;
+  justify-content: center;
 }
+@media (max-width: 768px) {
+  header h1 { font-size: 2rem; }
+  .section-title { font-size: 1.8rem; }
+  section { padding: 40px 15px; }
+  .menu-grid { grid-template-columns: 1fr; gap: 20px; }
+  .location { padding: 30px 20px; }
+}
+
+@media (max-width: 480px) {
+  header { padding: 0 15px; height: 80vh; }
+  header h1 { font-size: 1.6rem; }
+  header p { font-size: 1rem; }
+  .about { font-size: 1rem; }
+  .menu-card { padding: 20px; }
+  .whatsapp { bottom: 15px; right: 15px; width: 50px; height: 50px; font-size: 24px; }
+}
+
 
 
     /* Footer */
@@ -272,10 +290,15 @@ From spicy soups to mouth-watering grills, we bring the true taste of Nigeria to
         <p>Open Daily: 9am – 10pm</p>
       </div>
 
-      <!-- Google Map -->
     <div class="location-map">
-  <iframe src="https://www.google.com/maps?q=Opebi+Road+Ikeja+Lagos&output=embed" allowfullscreen loading="lazy"></iframe>
+  <iframe 
+    src="https://www.google.com/maps?q=Opebi+Road+Ikeja+Lagos&output=embed" 
+    style="width:100% !important; height:100% !important; border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
 </div>
+
 
     </div>
   </section>
