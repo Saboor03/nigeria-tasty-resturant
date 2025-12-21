@@ -13,7 +13,7 @@
     header {
       background: linear-gradient(135deg, #008751, #fcd116);
       background-image: url("images/bg-original.png");
-      color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
       text-align: center;
       height: 100vh;
       width: 100%;
